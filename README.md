@@ -13,8 +13,9 @@ The project follows an end-to-end data science workflow including data preproces
 •	Compare multiple machine learning models for best performance 
 
 ## Dataset
-The dataset used is the Telco Customer Churn dataset, which contains customer demographic information, account details, and service usage behavior.
-View the dataset on Kaggle https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+The dataset used in this project is the **Telco Customer Churn** dataset, originally provided by IBM Sample Analytics Datasets. It contains customer demographic information, account details, and service usage behavior.
+
+* **Source:** [Kaggle - Telco Customer Churn by BlastChar](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 Key features include:
 

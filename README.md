@@ -88,27 +88,55 @@ Optimized XGBoost model using hyperparameter tuning to improve predictive perfor
 
 ### 7. Model Interpretation
     
-•	Feature importance analysis 
+## •	Feature importance analysis 
 
-•	ROC curve comparison 
+<img width="616" height="292" alt="image" src="https://github.com/user-attachments/assets/2f26a5ac-57ad-4c44-b9fa-bc8737721db9" />
 
-•	Business insights extraction 
 
-# Model Performance Summary
+#### Feature Importance Visualization
+
+The feature importance visualization highlights the variables that contributed most strongly to customer churn prediction within the Random Forest model.
+
+Customer tenure emerged as the most influential feature, indicating that customer loyalty duration plays a critical role in retention behavior.
+
+Pricing-related variables such as TotalCharges and MonthlyCharges also demonstrated substantial predictive influence, suggesting that pricing sensitivity contributes significantly to churn risk.
+
+Contract duration and value-added support services further influenced churn prediction, emphasizing the importance of customer engagement and long-term service relationships.
+
+## •	ROC curve comparison 
+
+<img width="514" height="293" alt="image" src="https://github.com/user-attachments/assets/8fe41b64-4cf9-4eda-a244-7ee78889e9f1" />
+
+#### ROC Curve Interpretation
+
+The ROC curves demonstrate that Logistic Regression, Random Forest, and XGBoost achieved strong classification performance and maintained high discrimination capability between churn and non-churn customers.
+
+XGBoost achieved the highest ROC-AUC score, followed closely by Random Forest and Logistic Regression.
+
+The Decision Tree model demonstrated comparatively lower ROC-AUC performance, indicating reduced overall discrimination capability.
+
+
+#### Model Performance Summary
 The tuned XGBoost model achieved the best performance with a ROC-AUC score of approximately 0.848, indicating strong ability to distinguish between churners and non-churners.
 
-# Key Insights
+#### Key Insights
 •	Customers with month-to-month contracts are more likely to churn 
 •	Higher monthly charges increase churn probability 
 •	Customers with short tenure are at higher risk of leaving 
 •	Certain payment methods are associated with higher churn rates 
 
-# Results Visualization
+#### Results Visualization
 •	ROC Curve comparison across models 
  
 •	Feature importance plots for interpretability 
  
+## Business Insights & Recommendations
 
+Based on the feature importance analysis and model predictions, the following strategic actions are recommended to mitigate customer retention risks:
+
+* **Incentivize Contract Migrations:** Shift high-risk month-to-month customers toward 1-year or 2-year agreements by offering introductory annual discounts.
+* **Promote Autopay Adoption:** Reduce billing friction by offering a one-time credit for switching from electronic checks to automated credit card/bank billing.
+* **Proactive Retention Alerts:** Integrate the XGBoost/Random Forest model into customer workflows to flag high-risk accounts early, enabling the customer success team to intervene before cancellations occur.
 
 # Tools & Technologies
 
